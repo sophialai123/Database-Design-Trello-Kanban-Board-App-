@@ -31,31 +31,43 @@ Trello is a work management tool that allows you to organise your work in boards
 
 ##### 5. Comments can be added to cards by users who can access the board
 - **Many to Many** relationship between "site_user" and "board" - many users can have many boards --ONLY for private board
-- create a join table called "board_member"
-- create a table called" comment"
+- create a join table called "board_member" - many to many relationship
+- create a table called" comment" 
 - the relation between "card" and "comment" is **one to many**, one card can have many comments
 - the relation between "site_user" and "comment" is **one to many**, one user can have many comments
 
 ---
 
-##### 1. A user can sign up to our application 
+##### 6. A checklist can be added to a card
+- create a table called "checklist_item "
+- the relation between "card" and "checklist_item" is **one to many**, one card can have many checklist items
 ---
 
 
-##### 1. A user can sign up to our application 
+##### 7. Users can be added as members to a card to see updates
+- use can add other users or add themselves to a specific card
+- **Many to Many** relationship between "site_user" and "card" - many users can have many cards 
+- create a join table called "card_member" - many to many relationship
 ---
 
 
-##### 1. A user can sign up to our application 
+##### 8. Any activity on a card should be tracked 
+- create a table called "card_activity " - store the history of the card
+- the relation between "card" and "card_activity" is **one to many**, one card can have many card activities
+- the relation between "site_user" and "card_activity" is **one to many**, one user can have many card activities
+
 ---
-##### 1. A user can sign up to our application 
+##### 9. A card can be archived so it is no longer visible on the board(UI)
+- add a new column called "is_active" to "card" table to check if the card is archived or not 
+
+---
+##### 10. A user can add labels to a card, edit label names and colours, and create labels
 ---
 
 
-##### 1. A user can sign up to our application 
+##### 11. A user can sign up to our application 
 ---
 
-
-##### 1. A user can sign up to our application 
+##### 12. A user can sign up to our application 
 ---
 
