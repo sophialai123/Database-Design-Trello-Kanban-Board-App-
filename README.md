@@ -65,12 +65,15 @@ Trello is a work management tool that allows you to organise your work in boards
 - create a table called "core-label" default values -- not related to any tables 
 - create a record for each board called "board_label"
 - the relation between "board" and "board_label" is **one to many**, one board can have many board labels
-- the relation between "card" and "card_label" is **one to many**, one card can have many card labels
+- create a join table called "card_label"
+- the relation between "board_label" and "card_label" is **many to many**, many board labels can have many card labels
 
-
-##### 11. A user can sign up to our application 
+##### 11. A card can have a due date and a reminder date and time
+- add new columns in to "card" table -called "due_date"(just date) and "reminder_date"( data and time)
 ---
 
-##### 12. A user can sign up to our application 
+##### 12. A user can attach files and pictures to a card 
+- create a table called "card_attachement"
+- the relation between "card" and "card_attachement" is **one to many**, one card can have many card attachments
 ---
 
