@@ -62,7 +62,10 @@ Trello is a work management tool that allows you to organise your work in boards
 
 ---
 ##### 10. A user can add labels to a card, edit label names and colours, and create labels
----
+- create a table called "core-label" default values -- not related to any tables 
+- create a record for each board called "board_label"
+- the relation between "board" and "board_label" is **one to many**, one board can have many board labels
+- the relation between "card" and "card_label" is **one to many**, one card can have many card labels
 
 
 ##### 11. A user can sign up to our application 
