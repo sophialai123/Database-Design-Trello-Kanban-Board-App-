@@ -3,7 +3,7 @@ Trello is a work management tool that allows you to organise your work in boards
 
 #### Design app: **lucid.app**
 - [Database design link](https://lucid.app/lucidchart/63b4da6d-1315-4f2a-8085-49d7ce76c221/edit?page=0_0&invitationId=inv_d2070272-2755-43b8-b6db-05b659ff1329#)
-
+- [Youtube tutorial](https://www.youtube.com/watch?v=7Ck8wSoKJXI)
 ### Database requirements
 ##### 1. A user can sign up to our application 
 - create a table name called "site_user"
