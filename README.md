@@ -25,13 +25,16 @@ Trello is a work management tool that allows you to organise your work in boards
 
 ##### 4. A user can add cards to a board_list on a board 
 - create a table called "card"
-- - the relation between "board_list" and "card" is **one to many**, one board_list can have many cards
+- the relation between "board_list" and "card" is **one to many**, one board_list can have many cards
 ---
 
 
 ##### 5. Comments can be added to cards by users who can access the board
-- **Many to Many** relationship between "site_user" and "board"
+- **Many to Many** relationship between "site_user" and "board" - many users can have many boards --ONLY for private board
 - create a join table called "board_member"
+- create a table called" comment"
+- the relation between "card" and "comment" is **one to many**, one card can have many comments
+- the relation between "site_user" and "comment" is **one to many**, one user can have many comments
 
 ---
 
